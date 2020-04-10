@@ -1,62 +1,56 @@
-# API-Challenge
+## What's the Weather Like? ##
 
-Python API Homework - What's the Weather Like?
+** Part I - WeatherPy **
 
-Background
-Whether financial, political, or social -- data's true power lies in its ability to answer questions definitively. So let's take what you've learned about Python requests, APIs, and JSON traversals to answer a fundamental question: "What's the weather like as we approach the equator?"
+** Research question: "What's the weather like as we approach the equator?" **
 
-Before You Begin
-Create a new repository for this project called python-api-challenge. Do not add this homework to an existing repository.
-Clone the new repository to your computer.
-Inside your local git repository, create a directory for both of the  Python Challenges. Use folder names corresponding to the challenges: WeatherPy.
-Inside the folder that you just created, add new files called WeatherPy.ipynb and VacationPy.ipynb. These will be the main scripts to run for each analysis.
-Push the above changes to GitHub.
+Will show a series of scatter plots to showcase the following relationships to visualize the weather of 500+ cities across the world of varying distance from the equator:
 
+- Temperature (F) vs. Latitude
+- Humidity (%) vs. Latitude
+- Cloudiness (%) vs. Latitude
+- Wind Speed (mph) vs. Latitude
 
-Part I - WeatherPy
-In this example, you'll be creating a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, you'll be utilizing a simple Python library, the OpenWeatherMap API, and a little common sense to create a representative model of weather across world cities.
-Your first objective is to build a series of scatter plots to showcase the following relationships:
+** Findings and Observations **
+- Temperature (F) vs. Latitude: Data shows that the closer the latitude is to 0°, the higher the temperature
 
-Temperature (F) vs. Latitude
-Humidity (%) vs. Latitude
-Cloudiness (%) vs. Latitude
-Wind Speed (mph) vs. Latitude
+- Humidity (%) vs. Latitude: Data shows that there is no correlation visible
 
-After each plot add a sentence or too explaining what the code is and analyzing.
-Your next objective is to run linear regression on each relationship, only this time separating them into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
+- Cloudiness (%) vs. Latitude: Data shows that there are pockets where there is a maximum percent of cloudiness and zero percent of cloudiness. About 0 percent of clouds were areas with a 20° to 60° latitude range and high maximum cloudiness percent were areas with -20° to 0° and 40° to 70° latitude range.
 
-Northern Hemisphere - Temperature (F) vs. Latitude
-Southern Hemisphere - Temperature (F) vs. Latitude
-Northern Hemisphere - Humidity (%) vs. Latitude
-Southern Hemisphere - Humidity (%) vs. Latitude
-Northern Hemisphere - Cloudiness (%) vs. Latitude
-Southern Hemisphere - Cloudiness (%) vs. Latitude
-Northern Hemisphere - Wind Speed (mph) vs. Latitude
-Southern Hemisphere - Wind Speed (mph) vs. Latitude
-
-After each pair of plots explain what the linear regression is modelling such as any relationships you notice and any other analysis you may have.
-Your final notebook must:
-
-Randomly select at least 500 unique (non-repeat) cities based on latitude and longitude.
-Perform a weather check on each of the cities using a series of successive API calls.
-Include a print log of each city as it's being processed with the city number and city name.
-Save a CSV of all retrieved data and a PNG image for each scatter plot.
+- Wind Speed (mph) vs. Latitude: Data shows that there is no correlation visible. However there was an outlier for maximum wind speed around 70° latitude for the random data set that included this data point.
 
 
-Part II - VacationPy
-Now let's use your skills in working with weather data to plan future vacations. Use jupyter-gmaps and the Google Places API for this part of the assignment.
+Next will show a series of scatter plots with a linear regression of the same cities but showcasing the following relationships according to the Northern Hemisphere and Southern Hemisphere
 
+- Northern Hemisphere - Temperature (F) vs. Latitude
+- Southern Hemisphere - Temperature (F) vs. Latitude
 
-Create a heat map that displays the humidity for every city from the part I of the homework.
-Narrow down the DataFrame to find your ideal weather condition. 
-Using Google Places API to find the first hotel for each city located within 5000 meters of your coordinates.
-Plot the hotels on top of the humidity heatmap with each pin containing the Hotel Name, City, and Country.
+- Northern Hemisphere - Humidity (%) vs. Latitude
+- Southern Hemisphere - Humidity (%) vs. Latitude
 
+- Northern Hemisphere - Cloudiness (%) vs. Latitude
+- Southern Hemisphere - Cloudiness (%) vs. Latitude
 
+- Northern Hemisphere - Wind Speed (mph) vs. Latitude
+- Southern Hemisphere - Wind Speed (mph) vs. Latitude
 
-As final considerations:
-You must complete your analysis using a Jupyter notebook.
-You must use the Matplotlib or Pandas plotting libraries.
-For Part I, you must include a written description of three observable trends based on the data.
-You must use proper labeling of your plots, including aspects like: Plot Titles and Axes Labels.
-For max intensity in the heat map, try setting it to the highest humidity found in the data set.
+** Findings and Observations **
+
+- Northern and Southern Hemisphere - Temperature (F) vs. Latitude:  There is a strong to moderate correlation between Latitude coordinate and Temperature. The closer to the equator(0°) the higher the temperature, the further away from the equator temperature decreases.
+
+- Northern and Southern Hemisphere - Humidity (%) vs. Latitude: There was a weak to no correlation between Latitude coordinate and Humidity.
+
+- Northern and Southern Hemisphere - Cloudiness (%) vs. Latitude: There was a weak to no correlation between Latitude coordinate and Cloudiness. However, there are pocket areas where there were a maximum percent of cloudiness between 0° to -20° in the Southern Hemisphere and 60° to 70° in the Northern Hemisphere.
+
+- Northern and Southern Hemisphere - Wind Speed (mph) vs. Latitude: There was a weak to no correlation between Latitude coordinate and Wind Speed. However, there was an outlier that had the maximum wind speed which was Lakselv, Norway at around 70° latitude for the random data set that included this data point.
+
+** Part II - VacationPy **
+
+** Research Goal: Working with weather data to plan a future vacation weather with a weather preference **
+
+Will show the following below:
+- A heat map that displays the humidity for every city from the Part I - WeatherPy
+- A DataFrame that finds ideal weather conditions for some place with the maximum temperature lower than 80 degrees F, minimum temperature of 60 degrees F, wind speed less than 10 mph, and humidity lower than 45%
+- Plot the hotels (using Google Places API) on top of the humidity heatmap with each pin containing the Hotel Name, City, and Country located within 5000 meters of city coordinates with the ideal weather conditions from above
+
