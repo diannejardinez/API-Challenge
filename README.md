@@ -47,7 +47,7 @@ Next will show a series of scatter plots with a linear regression of the same ci
 
 **Part II - VacationPy**
 
-**Research Goal: Working with weather data to plan a future vacation weather with a weather preference**
+**Research Goal: Working with weather data to plan a future vacation with a weather preference**
 
 Will show the following below:
 - A heat map that displays the humidity for every city from the Part I - WeatherPy
