@@ -1,8 +1,8 @@
 ## What's the Weather Like? ##
 
-** Part I - WeatherPy **
+**Part I - WeatherPy**
 
-** Research question: "What's the weather like as we approach the equator?" **
+**Research question: "What's the weather like as we approach the equator?"**
 
 Will show a series of scatter plots to showcase the following relationships to visualize the weather of 500+ cities across the world of varying distance from the equator:
 
@@ -11,7 +11,7 @@ Will show a series of scatter plots to showcase the following relationships to v
 - Cloudiness (%) vs. Latitude
 - Wind Speed (mph) vs. Latitude
 
-** Findings and Observations **
+**Findings and Observations**
 - Temperature (F) vs. Latitude: Data shows that the closer the latitude is to 0°, the higher the temperature
 
 - Humidity (%) vs. Latitude: Data shows that there is no correlation visible
@@ -35,7 +35,7 @@ Next will show a series of scatter plots with a linear regression of the same ci
 - Northern Hemisphere - Wind Speed (mph) vs. Latitude
 - Southern Hemisphere - Wind Speed (mph) vs. Latitude
 
-** Findings and Observations **
+**Findings and Observations**
 
 - Northern and Southern Hemisphere - Temperature (F) vs. Latitude:  There is a strong to moderate correlation between Latitude coordinate and Temperature. The closer to the equator(0°) the higher the temperature, the further away from the equator temperature decreases.
 
@@ -45,9 +45,9 @@ Next will show a series of scatter plots with a linear regression of the same ci
 
 - Northern and Southern Hemisphere - Wind Speed (mph) vs. Latitude: There was a weak to no correlation between Latitude coordinate and Wind Speed. However, there was an outlier that had the maximum wind speed which was Lakselv, Norway at around 70° latitude for the random data set that included this data point.
 
-** Part II - VacationPy **
+**Part II - VacationPy**
 
-** Research Goal: Working with weather data to plan a future vacation weather with a weather preference **
+**Research Goal: Working with weather data to plan a future vacation weather with a weather preference**
 
 Will show the following below:
 - A heat map that displays the humidity for every city from the Part I - WeatherPy
