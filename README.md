@@ -52,5 +52,5 @@ Next will show a series of scatter plots with a linear regression of the same ci
 Will show the following below:
 - A heat map that displays the humidity for every city from the Part I - WeatherPy
 - A DataFrame that finds ideal weather conditions for some place with the maximum temperature lower than 80 degrees F, minimum temperature of 60 degrees F, wind speed less than 10 mph, and humidity lower than 45%
-- Plot the hotels (using Google Places API) on top of the humidity heatmap with each pin containing the Hotel Name, City, and Country located within 5000 meters of city coordinates with the ideal weather conditions from above
+- A heat map that displays the humidity for every hotel and a pin containing the Hotel Name, City, and Country located within 5000 meters of city coordinates with the ideal weather conditions from above
 
